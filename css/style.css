@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --light: #fff;
+    --dark: rgb(29, 29, 29);
+}
+.dark-theme
+{
+    --dark: #fff;
+    --light: rgb(29, 29, 29);
+    transition: all .3s ease-in-out;
+}
+body
+{
+   background-color: var(--dark);
+   color: var(--light);
+   transition: all .3s ease-in-out;
+}
+.light
+{
+    color: var(--light);
+}
+.dark
+{
+    color: var(--dark);
+}
+.light_bg
+{
+    background: var(--light);
+}
+.dark_bg
+{
+    background: var(--dark);
+}
